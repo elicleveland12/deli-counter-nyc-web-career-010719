@@ -20,3 +20,11 @@ def take_a_number(array, name)
   return name
   return place
 end
+
+def now_serving(array)
+  if array.size == 0  
+    puts "There is nobody waiting to be served!"
+  elsif array.size > 0  
+    puts "Currently serving #{array.shift}."
+  end 
+end 
